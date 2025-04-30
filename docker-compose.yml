@@ -1,7 +1,5 @@
-version: "3"
-
 services:
-  splitgram:
+  splitgram-app:
     build:
       context: .
       dockerfile: Dockerfile
