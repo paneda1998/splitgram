@@ -12,5 +12,7 @@ services:
     env_file:
       - .env
     restart: unless-stopped
-    ports:
-      - ${APP_PORT:-3000}:3000
+
+networks:
+  cloudflared:
+    external: true
